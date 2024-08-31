@@ -1,6 +1,6 @@
 CODSOFT
 
-Task 1: Customer Churn Prediction
+TASK 1: Customer Churn Prediction
 
 Objective:
 
@@ -40,7 +40,7 @@ Results:
 The Gradient Boosting model achieved the highest accuracy and was able to effectively identify customers who are likely to churn. This model can be used by the business to predict churn and take preventive actions to retain customers
 
 
-TASK2: Credit Card Fraud Detection Using Machine Learning:
+TASK 2: Credit Card Fraud Detection Using Machine Learning:
 
 Overview:
 This repository contains the code and resources for a machine learning project aimed at detecting fraudulent credit card transactions. The project uses various machine learning algorithms to classify transactions as either legitimate or fraudulent, helping to prevent financial losses due to fraud.
