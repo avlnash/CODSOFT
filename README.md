@@ -1,18 +1,44 @@
 CODSOFT
 
-TASK1: Movie Genre Classification
+Task 1: Customer Churn Prediction
 
-Overview
+Objective:
 
-This project focuses on building a machine learning model that predicts the genre of a movie based on its plot summary or other textual information. The model uses natural language processing (NLP) techniques to analyze text and classify it into genres such as Action, Drama, Comedy, etc.
+The goal of this task was to develop a machine learning model to predict customer churn for a subscription-based service. Churn prediction helps businesses identify customers who are likely to cancel their subscription, enabling them to take proactive measures to retain these customers.
 
-Features
+Dataset:
 
-Data Preprocessing: Clean and preprocess the movie plot summaries.
+The task utilized a dataset containing historical customer data, including features such as customer demographics, account information, and service usage behavior. The target variable, Exited, indicates whether a customer churned (1) or remained with the service (0).
 
-Feature Extraction: Use TF-IDF and word embeddings for text vectorization.
+Steps Involved:
 
-Model Training: Implement and train multiple models, including Naive Bayes, Logistic Regression, and SVM.
+Data Preprocessing:
+
+Handling Missing Values: Missing data was filled using median values for numerical columns and mode for categorical columns.
+Feature Selection: Irrelevant columns such as RowNumber, CustomerId, and Surname were dropped.
+Encoding Categorical Variables: The categorical columns (Geography, Gender) were encoded using one-hot encoding to convert them into numerical format.
+Feature Scaling: All features were scaled using StandardScaler to standardize the data.
+
+Model Building:
+
+Multiple machine learning models were trained and evaluated, including:
+Logistic Regression: A simple yet effective model for binary classification.
+Random Forest: An ensemble model that builds multiple decision trees and merges them together for better accuracy.
+Gradient Boosting: Another ensemble method that builds models sequentially, each new model correcting the errors made by the previous ones.
+
+Model Evaluation:
+
+The models were evaluated using various metrics such as accuracy, precision, recall, F1-score, and confusion matrix. This helped in identifying the best-performing model.
+
+Model Selection and Saving:
+
+The Gradient Boosting model was selected as the best-performing model based on its accuracy and other evaluation metrics.
+The final model was saved using joblib for future predictions.
+
+Results:
+
+The Gradient Boosting model achieved the highest accuracy and was able to effectively identify customers who are likely to churn. This model can be used by the business to predict churn and take preventive actions to retain customers
+
 
 TASK2: Credit Card Fraud Detection Using Machine Learning:
 
