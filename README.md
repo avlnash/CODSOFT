@@ -1,6 +1,6 @@
 CODSOFT
 
-Movie Genre Classification
+TASK1: Movie Genre Classification
 
 Overview
 
@@ -14,7 +14,7 @@ Feature Extraction: Use TF-IDF and word embeddings for text vectorization.
 
 Model Training: Implement and train multiple models, including Naive Bayes, Logistic Regression, and SVM.
 
-Credit Card Fraud Detection Using Machine Learning:
+TASK2: Credit Card Fraud Detection Using Machine Learning:
 
 Overview:
 This repository contains the code and resources for a machine learning project aimed at detecting fraudulent credit card transactions. The project uses various machine learning algorithms to classify transactions as either legitimate or fraudulent, helping to prevent financial losses due to fraud.
