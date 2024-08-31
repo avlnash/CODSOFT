@@ -1,43 +1,28 @@
-CODSOFT
+CODSOFT:
 
-TASK 1: Customer Churn Prediction
+TASK 1: Movie Genre Classification
 
-Objective:
+Movie Genre Classification is a machine learning project that aims to predict the genre of a movie based on its plot summary or textual information. Utilizing natural language processing (NLP) techniques and classification algorithms, this project provides an automated way to categorize movies into genres such as Action, Comedy, Drama, Horror, etc.
 
-The goal of this task was to develop a machine learning model to predict customer churn for a subscription-based service. Churn prediction helps businesses identify customers who are likely to cancel their subscription, enabling them to take proactive measures to retain these customers.
+Key Components:
 
-Dataset:
+Data Collection: The dataset consists of movie plot summaries paired with their corresponding genres. It is sourced from popular databases such as IMDb or TMDB.
 
-The task utilized a dataset containing historical customer data, including features such as customer demographics, account information, and service usage behavior. The target variable, Exited, indicates whether a customer churned (1) or remained with the service (0).
+Data Preprocessing: Textual data is cleaned and preprocessed, including tasks like removing stop words, tokenization, and lemmatization. Categorical data is converted into numerical features using techniques like TF-IDF (Term Frequency-Inverse Document Frequency) or word embeddings.
 
-Steps Involved:
+Feature Engineering: Features are extracted from plot summaries to represent the textual data in a numerical format. This includes using TF-IDF vectorization or word embeddings to capture semantic meanings.
 
-Data Preprocessing:
+Model Building: Several classification models are applied to predict movie genres:
 
-Handling Missing Values: Missing data was filled using median values for numerical columns and mode for categorical columns.
-Feature Selection: Irrelevant columns such as RowNumber, CustomerId, and Surname were dropped.
-Encoding Categorical Variables: The categorical columns (Geography, Gender) were encoded using one-hot encoding to convert them into numerical format.
-Feature Scaling: All features were scaled using StandardScaler to standardize the data.
+Naive Bayes: A probabilistic model that works well for text classification tasks.
+Logistic Regression: A linear model used for binary or multi-class classification.
+Support Vector Machines (SVM): A model that finds the optimal hyperplane for classification tasks.
 
-Model Building:
+Neural Networks: Advanced models such as LSTM, GRU, or transformer-based models like BERT can be used for capturing contextual information.
 
-Multiple machine learning models were trained and evaluated, including:
-Logistic Regression: A simple yet effective model for binary classification.
-Random Forest: An ensemble model that builds multiple decision trees and merges them together for better accuracy.
-Gradient Boosting: Another ensemble method that builds models sequentially, each new model correcting the errors made by the previous ones.
+Model Evaluation: The performance of each model is evaluated using metrics such as accuracy, precision, recall, and F1-score. A confusion matrix helps to understand misclassifications.
 
-Model Evaluation:
-
-The models were evaluated using various metrics such as accuracy, precision, recall, F1-score, and confusion matrix. This helped in identifying the best-performing model.
-
-Model Selection and Saving:
-
-The Gradient Boosting model was selected as the best-performing model based on its accuracy and other evaluation metrics.
-The final model was saved using joblib for future predictions.
-
-Results:
-
-The Gradient Boosting model achieved the highest accuracy and was able to effectively identify customers who are likely to churn. This model can be used by the business to predict churn and take preventive actions to retain customers
+Deployment: The trained model is saved and can be deployed via a web service or integrated into an application to provide genre predictions for new movies based on their plot summaries.
 
 
 TASK 2: Credit Card Fraud Detection Using Machine Learning:
@@ -77,3 +62,25 @@ Precision
 Recall
 F1-Score
 Confusion Matrix
+
+TASK 3: Customer Churn Prediction
+Customer Churn Prediction is a machine learning project designed to predict whether a customer will exit or remain with a company based on various features. Using the Churn_Modelling.csv dataset, which contains customer demographics and account information, this project applies several classification models to identify patterns and predict customer churn.
+
+Key Components:
+Data Preprocessing: The dataset is cleaned by removing unnecessary columns and converting categorical features into numerical format. Data is scaled to standardize feature values.
+
+Model Building: 
+
+Three classification models are implemented:
+
+Logistic Regression: A basic linear model for binary classification.
+
+Random Forest: An ensemble model that improves classification accuracy through multiple decision trees.
+
+Gradient Boosting: An advanced ensemble method that builds models sequentially to correct errors made by previous models.
+
+Model Evaluation: Each model's performance is assessed using accuracy and detailed classification reports to evaluate precision, recall, and F1-score.
+
+Model Saving: The best-performing model (Gradient Boosting) is saved using joblib and made available for download or storage on Google Drive.
+
+This project demonstrates a practical application of machine learning for customer retention strategies and provides a foundation for further experimentation with different algorithms or feature engineering techniques.
